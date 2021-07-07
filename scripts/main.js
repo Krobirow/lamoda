@@ -52,6 +52,7 @@ document.body.addEventListener('submit', e => {
 
   if (targ === headerCityForm) {
     localStorage.setItem('lamoda-location', headerCityInpt.value);
+    headerCityBtn.textContent = headerCityInpt.value;
     toggleCityForm();
     headerCityInpt.value = "";
   }
